@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទេសចរណ៍កម្ពុជា - BELTEI Tours & Travel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @media (max-width: 576px) {
+            .navbar-nav .nav-link {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            width: 50px;
+        }
+
+        #heroCarousel {
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 10;
+            width: 100%;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .hero-overlay h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-overlay p {
+            font-size: 1.5rem;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-inner::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 51, 102, 0.5);
+            pointer-events: none;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #f8f9fa;
+        }
+
+        .footer a:hover {
+            color: #ffc107;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img src="assets/img/Logo BIU Travel.png" width="50"> BELTEI Tours</a>
+
+            <ul class="navbar-nav d-flex flex-row" style="gap: 20px;">
+                <li class="nav-item"><a class="nav-link" href="#heroCarousel">ទំព័រដើម</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">តំបន់ទេសចរណ៍</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">ព័ត៌មាន</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">អំពីយើង</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <div class="hero-overlay">
+            <h1>ស្វាគមន៍មកកាន់ទឹកដីទេសចរណ៍កម្ពុជា</h1>
+            <p>ស្វែងយល់ពីសម្រស់ធម្មជាតិ និងវប្បធម៌ដ៏អស្ចារ្យ</p>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="assets/img/Cover_Angkor_wat.png" class="d-block w-100"></div>
+            <div class="carousel-item"><img src="assets/img/Kampot.jpg" class="d-block w-100"></div>
+            <div class="carousel-item"><img src="assets/img/Mondul_Kiri.jpg" class="d-block w-100"></div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="menu">
+        <h2 class="text-center font-weight-bold mb-5" style="color: #003366;">តំបន់ទេសចរណ៍ដ៏ពេញនិយម</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/Angkor_Wat.JPG" class="card-img-top" alt="Angkor Wat">
+                    <div class="card-body">
+                        <h5>ខេត្តសៀមរាប</h5>
+                        <p>ប្រាសាទបុរាណដ៏អស្ចារ្យ និងបឹងទន្លេសាប ជាគោលដៅទេសចរណ៍លំដាប់ពិភពលោក...</p>
+                        <a href="pages/siemreap.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/Kampot.jpg" class="card-img-top" alt="Kampot">
+                    <div class="card-body">
+                        <h5>ខេត្តកំពត</h5>
+                        <p>ទីក្រុងបុរាណជាប់មាត់ព្រែក ជាមួយបរិយាកាសធម្មជាតិ និងទេសភាពស្រស់ត្រកាល...</p>
+                        <a href="pages/kampot.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/Mondul_Kiri.jpg" class="card-img-top" alt="Mondulkiri">
+                    <div class="card-body">
+                        <h5>ខេត្តមណ្ឌលគិរី</h5>
+                        <p>តំបន់ខ្ពង់រាបភ្នំ ព្រៃឈើក្រាស់ និងអាកាសធាតុត្រជាក់ស្រួល សម្រាប់អ្នកចូលចិត្តធម្មជាតិ...</p>
+                        <a href="pages/mondulkiri.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="news" class="py-4">
+        <div class="container">
+            <h4 class="text-center mb-4">ព្រឹត្តិការណ៍ និងសកម្មភាពថ្មីៗ</h4>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+                    <div class="card h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                        <img src="assets/img/safari.jpg" class="card-img-top" style="height: 120px; object-fit: cover;"
+                            alt="News">
+                        <div class="card-body p-2">
+                            <h6 class="card-title fw-bold" style="font-size: 0.75rem; line-height: 1.2;">
+                                “ធ្វើដំណើរទស្សនកិច្ចសិក្សាទៅកាន់សួនសត្វ ភ្នំពេញសាហ្វារី (១ថ្ងៃ វិលល្ងាច)”
+                            </h6>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.7rem;">២០ មិថុនា ២០២៦</p>
+                            <a href="pages/News.html" class="btn btn-sm btn-outline-primary">អានលម្អិត</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+                    <div class="card h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                        <img src="assets/img/saramunti.jpg" class="card-img-top"
+                            style="height: 120px; object-fit: cover;" alt="News">
+                        <div class="card-body p-2">
+                            <h6 class="card-title fw-bold" style="font-size: 0.75rem; line-height: 1.2;">
+                                “ដំណើរទស្សនកិច្ចសិក្សារបស់និស្សិតឆ្នាំទី២ ឆមាសទី១ នៃសាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ
+                                ទីតាំងទី២-ស្ពានអាកាសចោមចៅ ចំនួន ២០០នាក់ ទៅកាន់សារមន្ទីរជាតិ (ភ្នំពេញ)”
+                            </h6>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.7rem;">១៤ ខែមីនា ឆ្នាំ២០២៦</p>
+                            <a href="pages/News1.html" class="btn btn-sm btn-outline-primary"
+                                style="font-size: 0.7rem;">អានលម្អិត</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+                    <div class="card h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                        <img src="assets/img/Icanavarman Museum.jpg" class="card-img-top"
+                            style="height: 120px; object-fit: cover;" alt="News">
+                        <div class="card-body p-2">
+                            <h6 class="card-title fw-bold" style="font-size: 0.75rem; line-height: 1.2;">
+                                “ដំណើរទស្សនកិច្ចសិក្សារបស់និស្សិតឆ្នាំទី១ ឆមាសទី១ នៃមហាវិទ្យាល័យគ្រប់គ្រងពាណិជ្ជកម្ម
+                                ចំនួន ២០០ អង្គ/នាក់ទៅកាន់សារមន្ទីរ ព្រះស្រីឦសានវរ្ម័ន”
+                            </h6>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.7rem;">១២ ខែកុម្ភៈ ឆ្នាំ២០២៦</p>
+                            <a href="pages/News6.html" class="btn btn-sm btn-outline-primary"
+                                style="font-size: 0.7rem;">អានលម្អិត</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+                    <div class="card h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                        <img src="assets/img/preikuk3.jpg" class="card-img-top"
+                            style="height: 120px; object-fit: cover;" alt="News">
+                        <div class="card-body p-2">
+                            <h6 class="card-title fw-bold" style="font-size: 0.75rem; line-height: 1.2;">
+                                “ដំណើរទស្សនកិច្ចសិក្សារបស់និស្សិតឆ្នាំទី៣ ឆមាសទី២ នៃសាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ចំនួន
+                                ៣៥០នាក់ ទៅកាន់រមណីយដ្ឋានប្រាសាទប្រាសាទសំបូរព្រៃគុក ខេត្តកំពង់ធំ”
+                            </h6>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.7rem;">៧ ខែកុម្ភៈ ឆ្នាំ២០២៦</p>
+                            <a href="pages/News5.html" class="btn btn-sm btn-outline-primary"
+                                style="font-size: 0.7rem;">អានលម្អិត</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+                    <div class="card h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                        <img src="assets/img/tulsleng.jpg" class="card-img-top"
+                            style="height: 120px; object-fit: cover;" alt="News">
+                        <div class="card-body p-2">
+                            <h6 class="card-title fw-bold" style="font-size: 0.75rem; line-height: 1.2;">
+                                “ដំណើរទស្សនកិច្ចសិក្សារបស់និស្សិតឆ្នាំទី១ ឆមាសទី១ នៃសាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ
+                                សរុបចំនួន ៣,៩៩៨នាក់ ទៅកាន់សារមន្ទីរឧក្រិដ្ឋកម្មប្រល័យពូជសាសន៍ទួលស្លែង”
+                            </h6>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.7rem;">៥ ខែមករា ឆ្នាំ២០២៦</p>
+                            <a href="pages/News4.html" class="btn btn-sm btn-outline-primary"
+                                style="font-size: 0.7rem;">អានលម្អិត</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-10 mb-4">
+                    <div class="card h-100 shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                        <img src="assets/img/kohke.jpg" class="card-img-top" style="height: 120px; object-fit: cover;"
+                            alt="News">
+                        <div class="card-body p-2">
+                            <h6 class="card-title fw-bold" style="font-size: 0.75rem; line-height: 1.2;">
+                                សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ សូមអបអរសាទរ រមណីយដ្ឋានប្រាសាទកោះកេរ
+                                ត្រូវបានដាក់បញ្ចូលក្នុងបេតិកភណ្ឌវប្បធម៌ពិភពលោក...
+                            </h6>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.7rem;">១៧ កញ្ញា ២០២៣ </p>
+                            <a href="pages/News3.html" class="btn btn-sm btn-outline-primary"
+                                style="font-size: 0.7rem;">អានលម្អិត</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-5" style="color: #003366;">ទំនាក់ទំនងមកកាន់យើង</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>ទីតាំងរបស់យើង</h5>
+                    <p>អាសយដ្ឋាន៖ រាជធានីភ្នំពេញ កម្ពុជា</p>
+                    <p>ទូរស័ព្ទ៖ 088 459 4318</p>
+                    <p>តេឡេក្រាម៖​ <a href="https://t.me/Machha1">088 459 4318</a></p>
+                    <p>អ៊ីមែល៖ info@belteitour.com</p>
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15636.232632354127!2d104.90656435489656!3d11.547685887197282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109511f69ba6309%3A0xc65060947881cb4e!2z4Z6f4Z624Z6A4Z6b4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6b4Z-Q4Z6Z4Z6U4Z-K4Z-C4Z6b4Z6S4Z644Z6i4Z6T4Z-S4Z6P4Z6a4Z6H4Z624Z6P4Z63IOGekeGeuOGfoeKAiyAo4Z6f4Z624Z6B4Z624Z6R4Z694Z6b4Z6f4Z-S4Z6b4Z-C4Z6EKQ!5e0!3m2!1skm!2skh!4v1781967107919!5m2!1skm!2skh"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">ឈ្មោះរបស់អ្នក</label>
+                            <input type="text" class="form-control" placeholder="បញ្ចូលឈ្មោះពេញ" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">អ៊ីមែល</label>
+                            <input type="email" class="form-control" placeholder="example@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">សាររបស់អ្នក</label>
+                            <textarea class="form-control" rows="4" placeholder="សូមសរសេរសារនៅទីនេះ..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">ផ្ញើសារ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-4" style="background-color: #003366; color: white; padding: 30px 0;" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mb-2">
+                    <h6 class="font-weight-bold">អំពីយើង</h6>
+                    <p style="font-size: 0.85rem; margin-bottom: 0;">
+                        ប៊ែលធី ទេសចរណ៍ គឺជាផ្នែកមួយនៃសាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ
+                        ដែលផ្តល់បទពិសោធន៍ទស្សនកិច្ចសិក្សាប្រកបដោយគុណភាព។
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-md-right align-self-center">
+                    <a href="pages/about.html" class="btn btn-link"
+                        style="color: #ffc107; font-size: 1rem; text-decoration: none; font-weight: bold;">
+                        គោលបំណង <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr style="border-top: 1px solid rgba(255,255,255,0.3); margin: 20px 0;">
+
+            <div class="text-center" style="font-size: 0.75rem; opacity: 0.8;">
+                © 2026 BELTEI International University | Created by MACHHA KAN
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

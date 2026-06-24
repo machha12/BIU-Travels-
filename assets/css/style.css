@@ -1,0 +1,42 @@
+
+@font-face {
+    font-family: 'KhmerFont';
+    src: url('../fonts/Hanuman-Bold.ttf') format('truetype');
+}
+html {
+    scroll-padding-top: 80px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    font-family: 'KhmerFont', sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar-nav .nav-link {
+    font-family: 'KhmerFont', sans-serif !important;
+    font-weight: bold;
+    color: #003366 !important;
+}
+h1{
+    font-family: 'KhmerFont', sans-serif;
+}
+h2{
+    font-family: 'KhmerFont', sans-serif;
+}
+h3{
+    font-family: 'KhmerFont', sans-serif;
+}
+h4{
+    font-family: 'KhmerFont', sans-serif;
+}
+h5 {
+    font-family: 'KhmerFont', sans-serif;
+}
+h6{
+    font-family: 'KhmerFont', sans-serif;
+}
+p{
+    font-family: 'KhmerFont', sans-serif;
+}
